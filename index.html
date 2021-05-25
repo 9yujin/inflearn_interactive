@@ -5,16 +5,19 @@
     <title>test</title>
     <script src = "script.js"></script>
     <style>
+
       body{
         background-color: black;
         position: relative;
         //cursor: none;
         margin: 0;
+        overflow: hidden;
       }
-      h1 {
+
+      h2 {
         color: white;
       }
-      .cursor_item {
+      /*.cursor_item {
         position: fixed;
         width: 50px;
         height: 50px;
@@ -22,8 +25,9 @@
         top:0;
         left:0;
         margin: -25px 0 0 -25px;
-        transition: all .5s cubic-bezier(1.000, -0.005, 0.520, 0.995);
-      }
+        //transition: all .5s cubic-bezier(1.000, -0.005, 0.520, 0.995);
+      }*/
+
       button {
         font-size : 40px;
         font-weight: bold;
@@ -34,6 +38,7 @@
         cursor: pointer;
         transition: .5s cubic-bezier(1.000, -0.005, 0.520, 0.995);
       }
+
       button:hover {
         background: red;
         color: white;
@@ -41,7 +46,13 @@
         padding : 100px 120px;
       }
 
+      .human {
+        position: absolute;
+        width: 250px;
+        left: calc(50% - 125px);
+        z-index: 100;
       }
+
     </style>
 
 
@@ -49,8 +60,10 @@
 
 
   <body>
-    <!--<h1>test</h1>--!>
-    <div class = "cursor_item"></div>
-    <button type="button">button</button>
+    <h2>test</h2>
+    <!--<div class = "cursor_item"></div>-->
+    <img src="3d_text/layer-7.png" class="human" alt="people">
+    <img src="3d_text/layer-1.jpg" class="bg" alt="wall">
+    <!--<button type="button">button</button>-->
   </body>
 </html>
