@@ -28,7 +28,7 @@ function loop(){
 
   h2.innerHTML = "x: " + x + " mx: " + mx;
   human.style.transform = "translate(" + -(mx/6) + "px, " + -(my/6) + "px)";
-  bg.style.transform = "translate(" + (mx/2) + "px, " + (my/2) + "px)";
+  bg.style.transform = "translate(" + (mx/3) + "px, " + (my/3) + "px)";
 
   window.requestAnimationFrame(loop);
 }
